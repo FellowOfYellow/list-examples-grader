@@ -9,8 +9,9 @@ git clone $1 student-submission
 echo 'Finished cloning'
 
 if [[ ! -f student-submission/ListExamples.java ]]
-then
+
 echo "You have not submitted the correct file or it is named wrong"
+fi
 
 cp -r student-submission/ListExamples.java grading-area
 cp -r TestListExamples.java grading-area
