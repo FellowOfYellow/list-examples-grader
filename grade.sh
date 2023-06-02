@@ -5,11 +5,11 @@ rm -rf grading-area
 
 mkdir grading-area
 
-git clone $1 student-submission
+clone $1 student-submission
 echo 'Finished cloning'
 
 if [[ ! -f student-submission/ListExamples.java ]]
-
+then
 echo "You have not submitted the correct file or it is named wrong"
 fi
 
